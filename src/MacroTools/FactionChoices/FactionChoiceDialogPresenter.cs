@@ -40,8 +40,8 @@ namespace MacroTools.FactionChoices
 
       foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
       {
-      
-      
+        Console.WriteLine($"Removing unpicked faction: {unpickedFaction.Data.Name}");
+        // RemoveFaction(unpickedFaction.Data);
       }
     }
 

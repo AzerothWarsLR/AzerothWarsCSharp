@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       StartingCameraPosition = Regions.DraeneiStartPos.Center;
-      StartingUnits = Regions.DraeneiStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
@@ -63,19 +63,25 @@ namespace WarcraftLegacies.Source.Factions
             };
     }
 
+    public override void OnRegistered()
+    {
+      RegisterObjectLimits();
+      RegisterQuests();
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
+
     public override void OnNotPicked()
     {
-      if (_onNotPickedCalled) return;
-      _onNotPickedCalled = true;
 
       Console.WriteLine("OnNotPicked called. Checking units in DraeneiStartPos.");
 
      
-      var unitsInRegion = GetUnitsInRectangle(Regions.DraeneiStartPos);
+      var unitsInRegion = GetUnitsInRectangle(Regions.SentStartPos);
       Console.WriteLine($"Number of units in DraeneiStartPos: {unitsInRegion.Count()}");
 
       Console.WriteLine("Replacing workers in DraeneiStartPos.");
-      ReplaceWorkersInRectangle(Regions.DraeneiStartPos, replacementUnitTypeId);
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
     }
 
     public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
@@ -100,12 +106,7 @@ namespace WarcraftLegacies.Source.Factions
       return new List<unit>();
     }
 
-    public override void OnRegistered()
-    {
-      RegisterObjectLimits();
-      RegisterQuests();
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
+    
 
     private void RegisterObjectLimits()
     {

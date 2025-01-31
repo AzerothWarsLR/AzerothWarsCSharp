@@ -70,13 +70,22 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       RegisterFactionDependentInitializer<Illidari>(RegisterIllidariQuestsAndDialogue);
       RegisterFactionDependentInitializer<Legion>(RegisterLegionDialogue);
     }
-
+    public override void OnRegistered()
+    {
+      RegisterObjectLimits();
+      RegisterQuests();
+      RegisterDialogue();
+      RegisterPowers();
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
+      SharedFactionConfigSetup.AddSharedFactionConfig(this);
+    }
 
 
 
     public override void OnNotPicked()
     {
       Console.WriteLine("OnNotPicked called. Replacing workers in SentStartPos.");
+
       ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
     }
 
@@ -95,14 +104,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
     }
 
     /// <inheritdoc />
-    public override void OnRegistered()
-    {
-      RegisterObjectLimits();
-      RegisterQuests();
-      RegisterDialogue();
-      RegisterPowers();
-      SharedFactionConfigSetup.AddSharedFactionConfig(this);
-    }
+   
 
     private void RegisterObjectLimits()
     {

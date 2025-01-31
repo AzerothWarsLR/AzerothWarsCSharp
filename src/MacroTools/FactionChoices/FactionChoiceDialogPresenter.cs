@@ -40,15 +40,15 @@ namespace MacroTools.FactionChoices
 
       foreach (var unpickedFaction in Choices.Where(x => x.Data != choice.Data))
       {
-        Console.WriteLine($"Removing unpicked faction: {unpickedFaction.Data.Name}");
-        RemoveFaction(unpickedFaction.Data);
+      
+      
       }
     }
 
     /// <inheritdoc />
     protected override Choice<Faction> GetDefaultChoice(player whichPlayer) => Choices.First();
 
-    private static void RemoveFaction(Faction faction)
+     private static void RemoveFaction(Faction faction)
     {
       var startingUnits = faction.StartingUnits;
       Console.WriteLine($"Removing faction: {faction.Name}. Number of starting units: {startingUnits.Count}");

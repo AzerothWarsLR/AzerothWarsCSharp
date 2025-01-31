@@ -39,7 +39,7 @@ namespace WarcraftLegacies.Source.Factions
       CinematicMusic = "Comradeship";
       ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS; 
       StartingCameraPosition = Regions.SentStartPos.Center;
-      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+    //  StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
       IntroText = @"You are playing as the ever-watchful 
 

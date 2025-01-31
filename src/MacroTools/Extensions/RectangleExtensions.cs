@@ -125,10 +125,12 @@ namespace MacroTools.Extensions
     public static List<unit> ReplaceWorkers(this Rectangle rectangle, int replacementUnitTypeId, Func<unit, bool> condition)
     {
       var unitsInArea = CreateGroup()
-        .EnumUnitsInRect(rectangle)
-        .EmptyToList()
-        .Where(condition)
-        .ToList();
+          .EnumUnitsInRect(rectangle)
+          .EmptyToList()
+          .Where(condition)
+          .ToList();
+
+      Console.WriteLine($"Total units matching condition: {unitsInArea.Count}");
 
       foreach (var unit in unitsInArea)
       {
@@ -136,6 +138,7 @@ namespace MacroTools.Extensions
         var y = GetUnitY(unit);
         var facing = GetUnitFacing(unit);
         var newUnit = CreateUnit(unit.OwningPlayer(), replacementUnitTypeId, x, y, facing);
+        Console.WriteLine($"Replacing unit at ({x}, {y}) with new unit of type {replacementUnitTypeId}");
         RemoveUnit(unit);
       }
 

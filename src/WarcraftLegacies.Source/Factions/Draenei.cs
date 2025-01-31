@@ -33,7 +33,7 @@ namespace WarcraftLegacies.Source.Factions
       StartingGold = 200;
       ControlPointDefenderUnitTypeId = UNIT_U008_CONTROL_POINT_DEFENDER_DRAENEI;
       StartingCameraPosition = Regions.DraeneiStartPos.Center;
-      StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
+     // StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Advanced;
       IntroText = @"You are playing as the exiled |cff000080Draenei|r.
 
@@ -82,7 +82,7 @@ namespace WarcraftLegacies.Source.Factions
       foreach (var unit in replacedUnits)
       {
         SetUnitOwner(unit, Player(18), true);
-        Console.WriteLine("Replaced unit with ID " + GetUnitTypeId(unit) + " and set owner to " + GetPlayerId);
+        Console.WriteLine("Replaced unit with ID " + GetUnitTypeId(unit));
       }
     }
     

@@ -25,31 +25,5 @@
     "MapItemTableId": -1,
     "ItemTableSets": [],
     "CreationNumber": 2057
-  },
-  {
-    "Flags": 2,
-    "OwnerId": 18,
-    "Hp": -1,
-    "Mp": -1,
-    "InventoryData": [],
-    "AbilityData": [],
-    "CustomPlayerColorId": -1,
-    "WaygateDestinationRegionId": -1,
-    "TypeId": 1668246643,
-    "Variation": 18,
-    "Position": {
-      "X": -20672,
-      "Y": 8320
-    },
-    "Rotation": 4.71238899230957,
-    "Scale": {
-      "X": 1,
-      "Y": 1,
-      "Z": 1
-    },
-    "SkinId": 1668246643,
-    "MapItemTableId": -1,
-    "ItemTableSets": [],
-    "CreationNumber": 127
   }
 ]

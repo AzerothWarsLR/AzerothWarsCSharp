@@ -28,7 +28,7 @@ public static class Regions
 	public static Rectangle Auberdine_Ships { get; set; } = new Rectangle(-18272f, 2848f, -15936f, 5312f);
 	public static Rectangle AuberdineUnlock { get; set; } = new Rectangle(-18784f, 8608f, -14784f, 11104f);
 	public static Rectangle AzsharaAmbient2 { get; set; } = new Rectangle(-8704f, 896f, -3680f, 6112f);
-	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-21088f, 6400f, -18528f, 11104f);
+	public static Rectangle AzuremystAmbient { get; set; } = new Rectangle(-20736f, 6016f, -18176f, 10720f);
 	public static Rectangle BalorAmbient { get; set; } = new Rectangle(3104f, -14400f, 6656f, -10112f);
 	public static Rectangle BarrenAmbient1 { get; set; } = new Rectangle(-19456f, -5504f, -9888f, 512f);
 	public static Rectangle BarrenAmbient2 { get; set; } = new Rectangle(-16864f, -8192f, -12160f, -5888f);
@@ -83,7 +83,7 @@ public static class Regions
 	public static Rectangle DemonGate3 { get; set; } = new Rectangle(352f, -25472f, 864f, -25024f);
 	public static Rectangle Desolace_Ships { get; set; } = new Rectangle(-18720f, -7584f, -17088f, -3488f);
 	public static Rectangle DraeneiQuestKill { get; set; } = new Rectangle(-20928f, -5376f, -17184f, -2624f);
-	public static Rectangle DraeneiStartPos { get; set; } = new Rectangle(-20928f, 8480f, -20512f, 8832f);
+	public static Rectangle DraeneiStartPos { get; set; } = new Rectangle(-20864f, 8608f, -20448f, 8960f);
 	public static Rectangle DragonmawPortal { get; set; } = new Rectangle(22176f, -4896f, 22720f, -4576f);
 	public static Rectangle DragonmawUnlock { get; set; } = new Rectangle(20832f, -5088f, 23168f, -2720f);
 	public static Rectangle DrakUnlock { get; set; } = new Rectangle(1120f, 18592f, 3360f, 20960f);
@@ -252,7 +252,7 @@ public static class Regions
 	public static Rectangle ScholomanceAmbient2 { get; set; } = new Rectangle(12128f, 5440f, 16224f, 7072f);
 	public static Rectangle ScholomanceAmbient3 { get; set; } = new Rectangle(11200f, 7072f, 13728f, 7840f);
 	public static Rectangle SentinelTowerAmbient { get; set; } = new Rectangle(5696f, -17664f, 8672f, -14304f);
-	public static Rectangle SentStartPos { get; set; } = new Rectangle(-21280f, 7712f, -20576f, 8480f);
+	public static Rectangle SentStartPos { get; set; } = new Rectangle(-21376f, 7776f, -20640f, 8544f);
 	public static Rectangle ShadowfangAmbient { get; set; } = new Rectangle(4512f, 2624f, 8576f, 8160f);
 	public static Rectangle ShadowfangUnlock { get; set; } = new Rectangle(4736f, 2976f, 6208f, 4640f);
 	public static Rectangle Shadowforge_City { get; set; } = new Rectangle(11488f, -9728f, 13248f, -8320f);

@@ -37,7 +37,7 @@ namespace WarcraftLegacies.Source.Factions
       UndefeatedResearch = FourCC("R05Y");
       StartingGold = 200;
       CinematicMusic = "Comradeship";
-      ControlPointDefenderUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
+      ControlPointDefenderUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS; 
       StartingCameraPosition = Regions.SentStartPos.Center;
       StartingUnits = Regions.SentStartPos.PrepareUnitsForRescue(RescuePreparationMode.Invulnerable);
       LearningDifficulty = FactionLearningDifficulty.Basic;
@@ -79,15 +79,7 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
       ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
-
-
-
-    public override void OnNotPicked()
-    {
-      Console.WriteLine("OnNotPicked called. Replacing workers in SentStartPos.");
-
-      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
-    }
+    
 
     public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
     {

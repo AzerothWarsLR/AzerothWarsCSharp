@@ -15,7 +15,7 @@ namespace WarcraftLegacies.Source.Factions
 {
   public sealed class Draenei : Faction
   {
-    private const int replacementUnitTypeId = UNIT_H03F_CONTROL_POINT_DEFENDER_SENTINELS;
+    private const int replacementUnitTypeId = UNIT_O05A_GEMCRAFTER_DRAENEI_WORKER;
     private readonly SharedGoldMineManager _sharedGoldMineManager;
     private readonly PreplacedUnitSystem _preplacedUnitSystem;
     private readonly AllLegendSetup _allLegendSetup;
@@ -71,19 +71,7 @@ namespace WarcraftLegacies.Source.Factions
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 
-    public override void OnNotPicked()
-    {
-
-      Console.WriteLine("OnNotPicked called. Checking units in DraeneiStartPos.");
-
-     
-      var unitsInRegion = GetUnitsInRectangle(Regions.SentStartPos);
-      Console.WriteLine($"Number of units in DraeneiStartPos: {unitsInRegion.Count()}");
-
-      Console.WriteLine("Replacing workers in DraeneiStartPos.");
-      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
-    }
-
+    
     public void ReplaceWorkersInRectangle(Rectangle rectangle, int replacementUnitTypeId)
     {
       Console.WriteLine($"Replacing workers in rectangle: {rectangle}");
@@ -94,18 +82,9 @@ namespace WarcraftLegacies.Source.Factions
       foreach (var unit in replacedUnits)
       {
         SetUnitOwner(unit, Player(18), true);
-        Console.WriteLine($"Replaced unit with ID {GetUnitTypeId(unit)} and set owner to Player 18.");
+        Console.WriteLine("Replaced unit with ID " + GetUnitTypeId(unit) + " and set owner to " + GetPlayerId);
       }
     }
-
-    
-    private IEnumerable<unit> GetUnitsInRectangle(Rectangle rectangle)
-    {
-     
-      // This is a placeholder implementation
-      return new List<unit>();
-    }
-
     
 
     private void RegisterObjectLimits()

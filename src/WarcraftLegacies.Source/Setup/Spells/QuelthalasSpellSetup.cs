@@ -37,7 +37,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         DummyAbilityOrderId = OrderId("banish"),
         Radius = 250,
         CastFilter = CastFilters.IsTargetOrganicAndAlive,
-        TargetType = SpellTargetType.Point
+        TargetType = SpellTargetType.Point,
+        Chance = 0.5f
       };
       SpellSystem.Register(massBanish);
       
@@ -51,7 +52,8 @@ namespace WarcraftLegacies.Source.Setup.Spells
         ManaDrainedPerSecondLevel = 5,
         Range = 800,
         Radius = 225,
-        Interval = 0.1f
+        Interval = 0.1f,
+       
       };
       SpellSystem.Register(siphoningRitual);
       

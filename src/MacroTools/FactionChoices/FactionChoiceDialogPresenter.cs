@@ -63,12 +63,12 @@ namespace MacroTools.FactionChoices
         else
         {
           Console.WriteLine($"Removing unit: {unit}");
-          unit.Remove();
+         // unit.Remove();
         }
       }
 
       Console.WriteLine($"Calling OnNotPicked for faction: {faction.Name}");
-      faction.OnNotPicked();
+      // faction.OnNotPicked();
     }
 
     private static Choice<Faction>[] ConvertToFactionChoices(IEnumerable<Faction> factions)

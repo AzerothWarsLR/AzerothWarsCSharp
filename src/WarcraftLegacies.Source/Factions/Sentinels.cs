@@ -72,11 +72,11 @@ Once you have secured your holdings, gather your army and destroy the Old Gods. 
     }
     public override void OnRegistered()
     {
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
       RegisterObjectLimits();
       RegisterQuests();
       RegisterDialogue();
       RegisterPowers();
-      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
     

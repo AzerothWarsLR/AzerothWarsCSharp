@@ -65,9 +65,9 @@ namespace WarcraftLegacies.Source.Factions
 
     public override void OnRegistered()
     {
+      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
       RegisterObjectLimits();
       RegisterQuests();
-      ReplaceWorkersInRectangle(Regions.SentStartPos, replacementUnitTypeId);
       SharedFactionConfigSetup.AddSharedFactionConfig(this);
     }
 

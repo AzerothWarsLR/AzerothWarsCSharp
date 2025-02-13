@@ -1,0 +1,24 @@
+{
+  "OldId": 1952544616,
+  "NewId": 1261514856,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840949,
+      "Type": 3,
+      "Value": "(Tidal Lord Summon)"
+    },
+    {
+      "Id": 1633907573,
+      "Type": 1,
+      "Value": 0.8
+    },
+    {
+      "Id": 1818520949,
+      "Type": 3,
+      "Value": "war3mapImported\\SeaElementalAV2.mdl"
+    }
+  ]
+}

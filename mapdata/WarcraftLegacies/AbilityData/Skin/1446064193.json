@@ -1,0 +1,48 @@
+{
+  "OldId": 1936614721,
+  "NewId": 1446064193,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall Dummy)"
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "Q"
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Ensnare"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Ensnare - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes a target enemy unit to be bound to the ground so that it cannot move for \u003CAens,Dur2\u003E seconds. Air units that are ensnared can be attacked as though they were land units."
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Ensnare"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes enemy air units in a target area to be bound to the ground with a 50% chance per unit for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units. \r\n"
+    }
+  ]
+}

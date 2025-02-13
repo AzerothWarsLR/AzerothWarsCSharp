@@ -1,0 +1,134 @@
+{
+  "OldId": 1818447425,
+  "NewId": 1311846465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1768841569,
+      "Type": 3,
+      "Value": "spell"
+    },
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassEnsnare.blp"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 2
+    },
+    {
+      "Id": 1952539489,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1885430625,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Skywall)"
+    },
+    {
+      "Id": 1952540001,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Id": 2037082209,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Mass Ensnare"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNMassFrostArmor.blp"
+    },
+    {
+      "Id": 2020635233,
+      "Value": 1
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "W"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Mass Frost Armor - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Grants Frost Armor to all friendly unit in a target area for \u003CA13S,DataA1\u003E seconds. |n|n|cffffcc00Level 1|r - Grants \u003CA13S,DataB1\u003E armor and has a \u003CA13R,Cool1\u003E second cooldown.|n|cffffcc00Level 2|r - Grants \u003CA13S,DataB2\u003E armor and has a \u003CA13R,Cool2\u003E second cooldown.|n|cffffcc00Level 3|r - Grants \u003CA13S,DataB3\u003E armor and has a \u003CA13R,Cool3\u003E second cooldown.|n|cffffcc00Level 4|r - Grants \u003CA13S,DataB4\u003E armor and has a \u003CA13R,Cool4\u003E second cooldown."
+    },
+    {
+      "Id": 1952543841,
+      "Type": 3,
+      "Value": ""
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Ensnare"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Frost Armor - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Frost Armor - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Mass Frost Armor - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Each enemy air unit in a target area has a 50% chance to be bound to the ground for \u003CA0F3,Dur1\u003E seconds. Air units that are successfully ensnared can be attacked as though they were land units."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA2\u003E seconds, granting \u003CA13S,DataB2\u003E bonus armour and slowing units that attack them for 2 seconds."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA3\u003E seconds, granting \u003CA13S,DataB3\u003E bonus armour and slowing units that attack them for 2 seconds."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Applies Frost Armor to all friendly unit in a target area for \u003CA13S,DataA4\u003E seconds, granting \u003CA13S,DataB4\u003E bonus armour and slowing units that attack them for 2 seconds."
+    },
+    {
+      "Id": 2020631137,
+      "Value": 0
+    }
+  ]
+}

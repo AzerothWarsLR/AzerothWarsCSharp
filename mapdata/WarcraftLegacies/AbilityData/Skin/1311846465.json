@@ -1,0 +1,96 @@
+{
+  "OldId": 1986348353,
+  "NewId": 1311846465,
+  "Unk": [
+    0
+  ],
+  "Modifications": [
+    {
+      "Id": 1953653089,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\PASWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Id": 1718840929,
+      "Type": 3,
+      "Value": "(Legion Heroes)"
+    },
+    {
+      "Id": 1835101793,
+      "Type": 3,
+      "Value": "Vampiric Siphon"
+    },
+    {
+      "Id": 1918988897,
+      "Type": 3,
+      "Value": "ReplaceableTextures\\CommandButtons\\BTNWarglaive_of_Azzinoth.blp"
+    },
+    {
+      "Id": 1952805473,
+      "Type": 3,
+      "Value": "Learn Vampiric Siphon - [|cffffcc00Level %d|r]"
+    },
+    {
+      "Id": 1953854049,
+      "Type": 3,
+      "Value": "Causes the hero to heal damage whenever they deal damage to an enemy. |n|n|cffffcc00Level 1|r - Deals 20 damage. |n|cffffcc00Level 2|r - Deals 35 damage. |n|cffffcc00Level 3|r - Deals 50 damage. |n|cffffcc00Level 3|r - Deals 65 damage."
+    },
+    {
+      "Level": 1,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vampiric Siphon - [|cffffcc00Level 1|r]"
+    },
+    {
+      "Level": 2,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Vampiric Siphon - [|cffffcc00Level 2|r]"
+    },
+    {
+      "Level": 3,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 3|r]"
+    },
+    {
+      "Level": 4,
+      "Id": 829453409,
+      "Type": 3,
+      "Value": "Warglaives of Azzinoth - [|cffffcc00Level 4|r]"
+    },
+    {
+      "Level": 1,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to heal 50 damage whenever they deal damage to an enemy."
+    },
+    {
+      "Level": 2,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes the hero to heal 100 damage whenever they deal damage to an enemy."
+    },
+    {
+      "Level": 3,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 50 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    },
+    {
+      "Level": 4,
+      "Id": 828536161,
+      "Type": 3,
+      "Value": "Causes Illidan\u0027s attacks to deal 65 additional magic damage in an area around the attacked unit. Deals 20% extra damage to Demons."
+    },
+    {
+      "Id": 1802007137,
+      "Type": 3,
+      "Value": "F"
+    },
+    {
+      "Id": 2037408353,
+      "Value": 1
+    }
+  ]
+}
